@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tasks</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      padding: 10px;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .navbar li {
+      margin: 0 10px;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px;
+    }
+
+    .navbar a:hover {
+      background-color: #555;
+    }
+
+    h1 {
+       text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td{
+      border: 1px solid black;
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: left;
+    }
+
+    th:last-child,
+    td:last-child {
+      border-right: none;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: #e6e6e6;
+    }
+
+    td.progress-pending {
+      color: #FF0000; /* Red */
+    }
+
+    td.progress-completed {
+      color: #07ac07; /* Green */
+    }
+  </style>
+</head>
+<body>
+    <h1>Task Manager</h1>
+  <div class="navbar">
+    <ul>
+      <li><a href="form.html">Form</a></li>
+      <li><a href="tasks.html">Tasks</a></li>
+    </ul>
+  </div>
+  
+
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Category</th>
+        <th>Priority Level</th>
+        <th>Progress Level</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Reading</td>
+        <td>Read module 2 of the ICT 694</td>
+        <td>Self Study</td>
+        <td>High</td>
+        <td class="progress-completed">Completed</td>
+      </tr>
+      <tr>
+        <td>Reading</td>
+        <td>Read module 3 of the ICT 694</td>
+        <td>Self Study</td>
+        <td>High</td>
+        <td class="progress-pending">Pending</td>
+      </tr>
+      <tr>
+        <td>Reading</td>
+        <td>Read module 4 of the ICT 694</td>
+        <td>Self Study</td>
+        <td>High</td>
+        <td class="progress-pending">Pending</td>
+      </tr>
+      <tr>
+        <td>Reading</td>
+        <td>Read module 5 of the ICT 694</td>
+        <td>Self Study</td>
+        <td>High</td>
+        <td class="progress-pending">Pending</td>
